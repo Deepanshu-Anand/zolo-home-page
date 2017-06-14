@@ -1,0 +1,435 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+@font-face {
+   font-family: ProximaNova;
+   src: url(ProximaNovaBold.otf);
+}
+
+.removeDefault{
+    
+}
+
+.image-container{
+    width:100%;
+    height: 100vh;
+    background-image: url("assets/food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.custom{
+    max-width: 1200px;
+}
+.logo{
+    position: absolute;
+    top:20px;
+    left:8%;
+    color:#fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.how-it-works{
+    position: absolute;
+    right: 8%;
+    top:30px;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2.8px;
+}
+
+.how-it-works .text{
+    margin-right: 10px;
+}
+.property-search{
+    height: 10%;
+    width: 70%;
+    position: absolute;
+    top:80%;
+    left:15%;
+}
+.search-input {
+    height: 100%;
+    padding-left: 12%;
+    font-size: 20px;
+    min-height: 50px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+input::-webkit-input-placeholder{
+    color:red;
+}
+input:-moz-placeholder {
+    color:red;
+}
+
+.searchIcon{
+    position: absolute;
+    left: 5%;
+    top:35%;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.home-cards{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card1{
+    background-color: #fc7777;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    min-height: 216px;
+    
+}
+.card2{
+    background-color: #1bbc9b;
+    position: relative;
+    padding: 20px 20px 0px 20px;
+    min-height: 216px;
+}
+.card3{
+    background-color: #00a1df;
+    position: relative;
+    padding: 20px 0px 0px 20px;
+    min-height: 216px;
+}
+.furn-postition{
+    padding: 20px 0px 0px 0px;
+    text-align: right;
+}
+.com-position{
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.furniture-position{
+    width: 75%;
+    max-width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card-text{
+    font-size: 26px;
+    font-weight: 600;
+    color:#fff;
+}
+.no-margin{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.cities{
+    background-color: #eee;
+    padding: 40px 30px;
+    color: #535353;
+}
+.city{
+    display: inline-block;
+    width: 15%;
+    height: 200px;
+    background-color: #fff;
+    transition: width 0.15s,height 0.15s;
+    text-align: right;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 20px;
+    border-radius: 4px;
+	box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.27);
+    min-width: 180px;
+    margin-bottom: 40px;
+}
+.city-image{
+    width:70%;
+    height: 70%;
+    text-align: right;
+    transition: width 0.15s,height 0.15s;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.hidden-city{
+        visibility: hidden;
+        width: 1%;
+        height: 250px;
+        min-width: 0px;
+}
+
+
+
+.review-detail{
+   padding: 30px; 
+}
+
+
+.center{
+    text-align: center;
+}
+.city-text{
+	font-family: ProximaNova;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+.city-name{
+    font-size: 22px;
+	font-weight: 500;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.data-box{
+    display: inline-block;
+    width: 32%;
+    color: #fff;
+    text-align: center;
+    min-height: 200px;
+    padding: 50px 0px;
+    margin-right: 1%;
+    box-shadow: 0 0 46px 0 rgba(0, 0, 0, 0.27);
+}
+
+@media screen and (max-width: 720px){
+    .data-box{
+        width:80%;
+    }
+}
+
+.data{
+    font-size: 32px;
+	font-weight: bold;
+    margin-bottom: 10px;
+}
+.data-detail{
+    font-size: 16px;
+}
+.trial-note{
+    background-color: #fff;
+    text-align: right;
+    min-height: 430px;
+    padding: 40px 30px 0px 0px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.refer-note{
+    background-color: #fff;
+    min-height: 200px;
+    padding: 10px 0px 0px 30px;
+    margin-bottom: 30px;
+}
+.zolo-data{
+    margin-bottom: 8%;
+    text-align: center;
+}
+.head{
+    
+	font-weight: 500;
+    color: #535353;
+}
+.trial-note .head{
+    font-size: 36px;
+    margin-bottom: 8%;
+}
+
+.trial-note .know-more{
+    margin-top: 8%;
+}
+.refer-note .head{
+    font-size: 26px;
+}
+.notes{
+   color: #727272;
+   font-size:14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.know-more{
+    font-size: 16px;
+	font-weight: bold;
+    color:#1bbc9b;
+}
+
+.trial-shape{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.reviews{
+    background-color: #fff;
+    padding-top: 40px;
+    text-align: center;
+}
+.reviews .head{
+    font-size: 36px;
+    margin-bottom: 8%;
+}
+.reviews .notes{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.designation{
+    font-size: 14px;
+    color: #727272;
+    font-weight: 500;
+    margin-bottom: 30px;
+    
+}
+.reviews .know-more{
+    font-size: 18px;
+}
+
+.next-review{
+    font-size: 14px;
+    color: #727272;
+    font-weight: 100;
+    text-align: right;
+}
+.next-review .fa{
+    color:#1bbc9b;
+    margin-left: 5px;
+    font-size: 16px;
+    
+}
+.reviewer-name{
+    font-weight: bold;
+    font-size: 16px;
+}
+.zolo-app{
+    background-color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+}
+.zolo-app .head{
+    font-size: 36px;
+    margin-bottom: 8%;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.icons{
+    margin-top: 15%;
+}
+.about-us{
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+.blue-text{
+    color:#00a1df;
+}
+.mrg-btm-15px{
+    margin-bottom: 15px;
+}
+.bottom-logo{
+    margin-bottom: 40px;
+}
+.font-16px{
+    font-size: 16px;
+}
+.social-media{
+    font-size: 35px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.facebook{
+    color: #3b5998;
+}
+.insta{
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    color:#fff;
+    border-radius: 10px;
+    padding: 0px 2px;
+}
+.linked-in{
+    color: #0077B5;
+}
+.twitter{
+    color:#4099FF;
+}
+.mrg-top-minus-10px{
+    margin-top: -10px;
+}
+.break{
+    border: 1px solid #aaa;
+    margin: 40px 0px 20px 0px;
+}
+.line-animation{
+    background-image: url("assets/Line_asset-01.svg");
+    width:100%;
+    height: 100%;
+}
+.scroll-nav{
+    text-align: center;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.reviewer{
+    width: 100%;
+}
+
+@media screen and (min-width: 992px){
+    .city:hover .city-image{
+        width:60%;
+        height: 80%;
+        text-align: right;
+        transition: width 0.3s,height 0.3s;
+    }
+
+    .city:hover{
+        filter: grayscale(0%);
+        width: 30%;
+        height: 350px;
+        transition: width 0.3s,height 0.3s;
+        text-align: right;
+    }
+    .city{
+        filter: grayscale(100%);
+    }
+    
+    .city:hover .city-name{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .hidden-city{
+        visibility: hidden;
+        width: 1%;
+        height: 400px;
+        min-width: 0px;
+    }
+    .review-detail{
+       padding: 0px; 
+    }
+    .reviews{
+        text-align: inherit;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .reviewer{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .reviewer{
+        width: 80%;
+    }
+}
+.width100{
+    width: 100%;
+}
+
