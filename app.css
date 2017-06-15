@@ -5,6 +5,15 @@
    src: url(ProximaNovaBold.otf);
 }
 
+body{
+    z-index:2;
+}
+
+[class^=" col-"],[class^="col-"],.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .removeDefault{
     
 }
@@ -19,6 +28,7 @@
 }
 .custom{
     max-width: 1200px;
+    position: relative;
 }
 .logo{
     position: absolute;
@@ -78,6 +88,11 @@ input:-moz-placeholder {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.home-card{
+    position: relative;
+    z-index: 1;
+}
 .card1{
     background-color: #fc7777;
     position: relative;
@@ -85,17 +100,29 @@ input:-moz-placeholder {
     min-height: 216px;
     
 }
+.card1-back{
+    background-color: #fc7777;
+    width:100%;
+}
 .card2{
     background-color: #1bbc9b;
     position: relative;
     padding: 20px 20px 0px 20px;
     min-height: 216px;
 }
+.card2-back{
+    background-color: #1bbc9b;
+    width:100%;
+}
 .card3{
     background-color: #00a1df;
     position: relative;
     padding: 20px 0px 0px 20px;
     min-height: 216px;
+}
+.card3-back{
+    background-color: #00a1df;
+    width:100%;
 }
 .furn-postition{
     padding: 20px 0px 0px 0px;
@@ -115,7 +142,13 @@ input:-moz-placeholder {
     bottom: 0;
     right: 0;
 }
-
+[class$="-back"] .card-text{
+    font-size: 14px;
+    font-weight: 100;
+    color:#fff;
+    margin: 20px;
+    text-align: center;
+}
 .card-text{
     font-size: 26px;
     font-weight: 600;
@@ -129,6 +162,7 @@ input:-moz-placeholder {
     background-color: #eee;
     padding: 40px 30px;
     color: #535353;
+    z-index: 0;
 }
 .city{
     display: inline-block;
@@ -156,13 +190,11 @@ input:-moz-placeholder {
 }
 
 .hidden-city{
-        visibility: hidden;
-        width: 1%;
-        height: 250px;
-        min-width: 0px;
+    visibility: hidden;
+    width: 1%;
+    height: 250px;
+    min-width: 0px;
 }
-
-
 
 .review-detail{
    padding: 30px; 
@@ -267,6 +299,8 @@ input:-moz-placeholder {
     background-color: #fff;
     padding-top: 40px;
     text-align: center;
+    position: relative;
+
 }
 .reviews .head{
     font-size: 36px;
@@ -308,6 +342,7 @@ input:-moz-placeholder {
     text-align: center;
     margin-top: 50px;
     padding: 40px;
+    position: relative;
 }
 .zolo-app .head{
     font-size: 36px;
@@ -381,6 +416,18 @@ input:-moz-placeholder {
     width: 100%;
 }
 
+#svg-one {
+    position: absolute;
+    top: 4.2%;
+    max-width: 1165px;
+    width:95%;
+    height: 350vh;
+    margin-left: -25px;
+    z-index: 0;
+    opacity: 0.60;
+    visibility: hidden;
+}
+
 @media screen and (min-width: 992px){
     .city:hover .city-image{
         width:60%;
@@ -416,6 +463,51 @@ input:-moz-placeholder {
     .reviews{
         text-align: inherit;
     }
+    #svg-one {
+        width:100%;
+        visibility: visible;
+    }
+    [class$="-back"]{
+        position: absolute;
+        padding: 40px 10px 0px 10px;
+        min-height: 216px; 
+        visibility: visible;
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        top:0;
+        left:0;
+    }
+
+    .flipper:hover {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+    .flipper {
+        -webkit-transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 0.6s;
+        -moz-transform-style: preserve-3d;
+        -o-transition: 0.6s;
+        -o-transform-style: preserve-3d;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+    .card1,.card1-back,.card2,.card2-back,.card3,.card3-back{
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+    }
+    [class$="-back"] .card-text{
+        font-size: 26px;
+        font-weight: 600;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -433,3 +525,29 @@ input:-moz-placeholder {
     width: 100%;
 }
 
+
+
+#svg-two {
+    position: absolute;
+    top: 28%;
+    max-width: 1165px;
+    width:98%;
+    height: 1000px;
+    margin-left: -25px;
+    z-index: 0;
+    opacity: 0.40;
+}
+
+#svg-three {
+    position: absolute;
+    top: 55%;
+    max-width: 1165px;
+    width:98%;
+    height: 1000px;
+    margin-left: -25px;
+    z-index: 0;
+    opacity: 0.40;
+}
+.no-padding{
+    padding: 0px;
+}
